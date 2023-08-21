@@ -1,0 +1,64 @@
+@use "../../styles/vars" as *;
+
+.container {
+  max-width: 100%;
+}
+
+.button {
+  position: relative;
+  border: 4px solid transparent;
+  border-radius: 20px;
+
+  &_title {
+    height: 36px;
+    width: 100%;
+  }
+
+  &_body {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: $white-color;
+    text-transform: uppercase;
+    color: $main-color;
+  }
+
+  &_text {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: $button-text-color;
+    text-align: center;
+  }
+}
+
+.link {
+  color: $main-color;
+  text-decoration: none;
+  transition: 0.3s linear;
+
+  & .button_body {
+    transition: 0.3s linear;
+  }
+
+  & .button_body .button_text {
+    transition: 0.3s linear;
+  }
+
+  &:hover .button_body {
+    transform: transition;
+    background-color: $main-color;
+  }
+
+  &:active .button_body .button_text {
+    border-radius: 10px;
+    color: $white-color;
+    background-color: $secondary-color;
+  }
+}
+
+.img_button {
+  width: 100%;
+}
