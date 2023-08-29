@@ -1,1 +1,33 @@
+@use './vars' as *;
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Roboto:wght@400;700;900&display=swap');
+
+
+@mixin title-default {
+  font-family: $global-font-family;
+  font-weight: 500;
+}
+
+@mixin desktop-tablet-h1 {
+  @include title-default;
+
+  margin: 0;
+  padding: 0;
+  font-size: 44px;
+  line-height: 58px;
+  color: $title-font-color;
+}
+
+@mixin desktop-tablet-subtitle {
+  @include title-default;
+
+  font-size: 20px;
+  font-weight: 400;
+  color: $subtitle-font-color;
+}
+
+@mixin desktop-tablet-h2 {
+  @include title-default;
+
+  font-size: 20px;
+  color: $title-font-color;
+}

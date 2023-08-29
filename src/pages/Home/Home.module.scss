@@ -1,1 +1,30 @@
 @use "../../styles/grid.scss" as *;
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.background {
+  position: absolute;
+  top: 30px;
+  bottom: 30px;
+  left: 65px;
+  right: 30px;
+  display: flex;
+  border-radius: 20px;
+
+  background-color: #fbe0dc;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

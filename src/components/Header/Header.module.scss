@@ -1,0 +1,34 @@
+@use "../../styles/grid.scss" as *;
+@use "../../styles/typography" as *;
+
+.container {
+  height: 100vh;
+}
+
+.title {
+  margin-top: 80px;
+
+  &__text {
+    @include desktop-tablet-h1;
+    margin: 0;
+  }
+}
+
+.subtitle {
+  margin-top: 10px;
+
+  &__text {
+    @include desktop-tablet-subtitle;
+    margin: 0;
+  }
+}
+
+.second__title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+
+  &_text {
+    @include desktop-tablet-h2;
+    margin: 0;
+  }
+}
