@@ -18,7 +18,6 @@ const NavigateButton: React.FC<Props> = ({
   backgroundColor,
   borderColor,
   url,
-  count,
 }) => {
   // eslint-disable-next-line no-console
   console.log(url, borderColor);
@@ -26,7 +25,7 @@ const NavigateButton: React.FC<Props> = ({
   return (
     <div className={classes.container}>
       <Link to={url} className={classes.link}>
-        <div style={{ backgroundColor }} className={cn(classes.button, `button__${count}`)}>
+        <div style={{ backgroundColor, border: `4px solid ${borderColor}` }} className={cn(classes.button)}>
           <img
             className={classes.img_button}
             src={img}

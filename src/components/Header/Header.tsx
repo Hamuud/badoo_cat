@@ -88,8 +88,7 @@ const Header = () => {
               title="Voting"
               img={votingImg}
               backgroundColor="#b4b7ff"
-              borderColor="#d5f7e3"
-              count="first"
+              borderColor="#e1e2ff"
             />
           </div>
 
