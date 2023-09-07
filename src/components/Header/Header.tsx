@@ -2,9 +2,6 @@ import React from 'react';
 import cn from 'classnames';
 import NavigateButton from '../NavigateButton';
 import classes from './Header.module.scss';
-import votingImg from '../../images/vote-table.svg';
-import breedsImg from '../../images/pet-breeds.svg';
-import galleryImg from '../../images/images-search.svg';
 import Logo from '../Logo/Logo';
 
 const Header = () => {
@@ -86,7 +83,7 @@ const Header = () => {
             <NavigateButton
               url="/voting"
               title="Voting"
-              img={votingImg}
+              img="./images/vote-table.svg"
               backgroundColor="#b4b7ff"
               borderColor="#e1e2ff"
             />
@@ -103,7 +100,7 @@ const Header = () => {
             <NavigateButton
               url="/breeds"
               title="Breeds"
-              img={breedsImg}
+              img="./images/pet-breeds.svg"
               backgroundColor="#97eab9"
               borderColor="#d5f7e3"
             />
@@ -120,7 +117,7 @@ const Header = () => {
             <NavigateButton
               url="/gallery"
               title="Gallery"
-              img={galleryImg}
+              img="./images/images-search.svg"
               backgroundColor="#ffd280"
               borderColor="#ffedcc"
             />

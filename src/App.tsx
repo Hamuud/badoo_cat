@@ -5,6 +5,9 @@ import classes from './App.module.scss';
 import Home from './pages/Home/Home';
 import PageNotFound from './pages/PageNotFound/PageNotFound';
 import Header from './components/Header/Header';
+import Voting from './pages/Voting/Voting';
+import Breeds from './pages/Breeds/Breeds';
+import Gallery from './pages/Gallery/Gallery';
 
 export const App: React.FC = () => {
   const {
@@ -44,6 +47,9 @@ export const App: React.FC = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Navigate to="/" replace />} />
+            <Route path="/voting" element={<Voting />} />
+            <Route path="/breeds" element={<Breeds />} />
+            <Route path="/gallery" element={<Gallery />} />
 
             <Route path="*" element={<PageNotFound />} />
 
